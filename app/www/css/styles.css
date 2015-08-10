@@ -1,0 +1,10 @@
+.header-bg {
+    background: url('../assets/header.png') no-repeat;
+    height: 435px;
+    margin-bottom: 10px;
+}
+.description-bg{
+    background: url('../assets/description.png') no-repeat;
+    height: 435px;
+    margin-bottom: 10px;
+}

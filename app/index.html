@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<link>
+    <meta charset="UTF-8">
+    <title>My first angular ui router.</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="www/css/styles.css" />
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-12">
+        <div ui-view="imgView"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <ul class="nav nav-tabs">
+            <li>
+                <a ui-sref="home">Home</a>
+            </li>
+            <li>
+                <a ui-sref="description">Description</a>
+            </li>
+        </ul>
+        <div ui-view="contentView"></div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="www/app.js"></script>
+<script src="www/app.route.js"></script>
+</body>
+</html>
